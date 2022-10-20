@@ -1,0 +1,37 @@
+.cabecalho-home{
+    background: url("../img/cabecalho-home-bg.jpg") black no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.cabecalho-home__titulo{
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.cabecalho-home__role{
+    display: none;
+}
+
+.home__titulo{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px;
+}
+
+.home__titulo::after{
+    content: "";
+    display: block;
+    margin: 50px;
+    width: 50px;
+    height: 3px;
+    background-color: red;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.home__titulo--branco::after{
+    background-color: white;
+}
