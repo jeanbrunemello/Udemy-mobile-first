@@ -1,5 +1,6 @@
 //abstracts
 @import 'abstracts/_cores';
+@import 'abstracts/_breakpoints';
 
 //base
 @import 'base/_normalize';
@@ -7,11 +8,13 @@
 @import 'base/_meu-reset';
 
 //layout
+@import 'layout/_container';
 @import 'layout/_cabecalho';
 @import 'layout/_rodape';
+@import 'layout/_alinhamento-texto';
+@import 'layout/_alinhamento-img';
 
 //componentes
-@import 'components/_alinhamento-texto';
 @import 'components/_depoimentos';
 @import 'components/_formulario';
 @import 'components/_logo';
@@ -22,7 +25,7 @@
 @import 'components/_servicos';
 
 //paginas
-@import 'pages/contato';
-@import 'pages/pagina-inicial';
-@import 'pages/portifolio';
-@import 'pages/sobre-nos';
+@import 'pages/_contato';
+@import 'pages/_pagina-inicial';
+@import 'pages/_portifolio';
+@import 'pages/_sobre-nos';

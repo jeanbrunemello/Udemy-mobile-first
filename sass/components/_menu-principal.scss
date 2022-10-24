@@ -1,40 +1,69 @@
-.menu-principal__btn{
-    display: block;
-    width: 50px;
-    height: 50px;
-    text-indent: -9999px;
-    background-color: white;
-    background-image: url(../img/menuprincipal-btn-bg.png);
-    background-position: -48px 7px;
-    background-repeat: no-repeat;
-    border-color: lightgrey;
-    border-style: solid;
-    border-radius: 5px;
-    cursor: pointer;
+.menu-principal {
 
-    position: absolute;
-    top: 15px;
-    right: 15px;
-}
+    &__btn {
+        display: block;
+        width: 50px;
+        height: 50px;
+        text-indent: -9999px;
+        background-color: white;
+        background-image: url(../img/menuprincipal-btn-bg.png);
+        background-position: -48px 7px;
+        background-repeat: no-repeat;
+        border-color: lightgrey;
+        border-style: solid;
+        border-radius: 5px;
+        cursor: pointer;
 
-.menu-principal__btn--fechar{
-    background-position: 5px 5px;
-}
+        position: absolute;
+        top: 15px;
+        right: 15px;
 
-.menu-principal__lista{
-    padding: 0;
-    list-style: none;
-}
+        @media (min-width: $breakpoint-md) {
+            display: none;
+        }
+    }
 
-.menu-principal__item{
-    text-decoration: none;
-    font-weight: bold;
-    color: #343434;
-    margin-bottom: 10px;
-    display: block;
-    font-size: 18px;
-}
+    &__lista {
+        padding: 0;
+        list-style: none;
+        transition: margin 250ms ease-out;
 
-.menu-principal__item--atual{
-    color: #f44242
+        @media (min-width: $breakpoint-md) {
+            li {
+                display: inline-block;
+                margin: 0 10px;
+            }
+        }
+    }
+
+    &__item {
+        text-decoration: none;
+        font-weight: bold;
+        color: #343434;
+        margin-bottom: 10px;
+        display: block;
+        font-size: 18px;
+        height: 20px;
+        transition: all 250ms ease-out;
+    }
+
+    &__item--atual {
+        color: $cor-principal;
+    }
+
+    @media (max-width: 767px) {
+        &--fechado {
+            .menu-principal__btn {
+                background-position: 5px 5px;
+            }
+        }
+        .menu-principal__lista{
+            margin: 0;
+        }
+        .menu-principal__item{
+            margin: 0;
+            height: 0;
+            overflow: hidden;
+        }
+    }
 }
