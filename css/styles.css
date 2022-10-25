@@ -583,9 +583,9 @@ body {
 @media (max-width: 767px) {
   .menu-principal--fechado .menu-principal__btn {
     background-position: 5px 5px; }
-  .menu-principal .menu-principal__lista {
+  .menu-principal--fechado .menu-principal__lista {
     margin: 0; }
-  .menu-principal .menu-principal__item {
+  .menu-principal--fechado .menu-principal__item {
     margin: 0;
     height: 0;
     overflow: hidden; } }

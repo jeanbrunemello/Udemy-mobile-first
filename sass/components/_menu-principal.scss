@@ -52,18 +52,21 @@
     }
 
     @media (max-width: 767px) {
+
         &--fechado {
             .menu-principal__btn {
                 background-position: 5px 5px;
             }
-        }
-        .menu-principal__lista{
-            margin: 0;
-        }
-        .menu-principal__item{
-            margin: 0;
-            height: 0;
-            overflow: hidden;
+
+            .menu-principal__lista {
+                margin: 0;
+            }
+
+            .menu-principal__item {
+                margin: 0;
+                height: 0;
+                overflow: hidden;
+            }
         }
     }
 }
